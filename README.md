@@ -26,10 +26,15 @@
 
 # 🫂 The Team 🫂
 
-- Adrián Landaverde Nava
--
--
--
+- [Adrián Landaverde Nava](https://www.linkedin.com/in/adrian-landaverde-nava/)
+- [Alim Vasaya](https://www.linkedin.com/in/alimvasaya/)
+- [Kanika Gupta](https://www.linkedin.com/in/kanikagupta16/)
+- [Surya Patil](https://www.linkedin.com/in/surya-patil-01a3651a5/)
+
+<div style="text-align:center">
+  <img src="IMG20231020182741_01.jpg"  height="500">
+</div>
+
 
 
 # 🧠 What we learned 🧠
