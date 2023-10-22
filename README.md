@@ -9,9 +9,13 @@
 ![Static Badge](https://img.shields.io/badge/Python-blue?style=for-the-badge&logo=python&logoColor=white&color=%233776AB)
 ![Static Badge](https://img.shields.io/badge/Streamlit-blue?style=for-the-badge&logo=streamlit&logoColor=white&color=%23FF4B4B)
 ![Static Badge](https://img.shields.io/badge/Scikit%20Learn-blue?style=for-the-badge&logo=scikit-learn&logoColor=white&color=%23F7931E)
+![Static Badge](https://img.shields.io/badge/Open%20AI-blue?style=for-the-badge&logo=openai&logoColor=white&color=%23412991)
 
 
-The alarming surge in suicide rates among farmers in developing countries begs the question: What is driving these individuals to such a desperate point? Their relentless pursuit of higher yields has led many to employ excessive quantities of fertilizers and pesticides, with the hope of boosting their crop output. However, instead of reaping financial benefits, these practices often result in mounting debts and profound despair, ultimately pushing some farmers to take their own lives. What's more, the overdose of fertilizers not only contributes to soil pollution but also leads to diminishing yields over time, creating a detrimental feedback loop. This perilous combination of financial strain, environmental degradation, and declining agricultural productivity underscores the urgent need for comprehensive solutions to safeguard farmer well-being, promote environmental sustainability, and ensure the long-term success of agriculture in these regions.
+
+The alarming surge in suicide rates among farmers in developing countries begs the question: What is driving these individuals to such a desperate point? Their relentless pursuit of higher yields has led many to employ excessive quantities of fertilizers and pesticides, with the hope of boosting their crop output. However, instead of reaping financial benefits, these practices often result in mounting debts and profound despair, ultimately pushing some farmers to take their own lives. 
+
+What's more, the overdose of fertilizers not only contributes to soil pollution but also leads to diminishing yields over time, creating a detrimental feedback loop. This perilous combination of financial strain, environmental degradation, and declining agricultural productivity underscores the urgent need for comprehensive solutions to safeguard farmer well-being, promote environmental sustainability, and ensure the long-term success of agriculture in these regions.
 
 
 # 🌟 What it does 🌟
