@@ -19,7 +19,9 @@ The alarming surge in suicide rates among farmers in developing countries begs t
 At CropNsoil, our cutting-edge program harnesses crucial data, such as farm location, size, soil nitrogen levels, and pH, to meticulously craft the **optimal intercropping strategy** for your fields. 
 We utilize advanced modeling techniques to determine the most harmonious crop combinations and their precise spatial arrangement. Our primary goal is to enhance your revenue, all while promoting sustainability and safeguarding the Earth's precious soil.
 
+
 By intelligently pairing crops that complement each other's growth, we create a synergy that significantly boosts overall efficiency by reducing the need of excess fertilizers and pesticides. This increases your income, reduces the risk factor associated with failure of one crop, but also plays a pivotal role in protecting our environment. 
+
 
 Furthermore, our custom intercropping patterns are tailored to harness the unique attributes of your specific location. This ensures that your agricultural practices are aligned with the environmental conditions of your farm. By making the most of what your land has to offer, we contribute to a sustainable farming future that safeguards our soil and protects our planet.
 
