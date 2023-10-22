@@ -1,0 +1,14 @@
+credentials:
+  usernames:
+    adrianln:
+      email: adrianln@bu.edu
+      name: Adrian Landaverde
+      password: $2b$12$M2np3NCu0EC8SrwojPKDNOHVgk8XdoE5f6aOJKPPf9i/tNex95ZVC # To be replaced with hashed password
+cookie:
+  expiry_days: 30
+  key: key # Must be string
+  name: cookie # Must be string
+preauthorized:
+  emails:
+  - adrianln@bu.edu
+

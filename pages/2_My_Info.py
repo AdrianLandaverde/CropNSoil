@@ -9,20 +9,45 @@ st.session_state.register= False
 
 st.write('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_html=True)
 
+page_bg_img = f"""
+<style>
+[data-testid="stAppViewContainer"] > .main {{
+background-image: url("https://wallpaperaccess.com/full/1155039.png");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: local;
+}}
+
+[data-testid="stHeader"] {{
+background: rgba(0,0,0,0);
+}}
+
+[data-testid="stToolbar"] {{
+right: 2rem;
+}}
+</style>
+"""
+# Inject the CSS
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 st.title("My Info")
 
+col00, col11, col22= st.columns([1, 2, 1])
 
-with open('config.yaml') as file:
-    config = yaml.load(file, Loader=SafeLoader)
-authenticator = stauth.Authenticate(
-    config['credentials'],
-    config['cookie']['name'],
-    config['cookie']['key'],
-    config['cookie']['expiry_days'],
-    config['preauthorized']
-)
+with col11:
 
-name, authentication_status, username = authenticator.login('Login', 'main')
+    with open('config.yaml') as file:
+        config = yaml.load(file, Loader=SafeLoader)
+    authenticator = stauth.Authenticate(
+        config['credentials'],
+        config['cookie']['name'],
+        config['cookie']['key'],
+        config['cookie']['expiry_days'],
+        config['preauthorized']
+    )
+
+    name, authentication_status, username = authenticator.login('Login', 'main')
 
 
 if authentication_status:

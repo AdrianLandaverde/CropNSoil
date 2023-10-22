@@ -6,6 +6,28 @@ st.set_page_config(layout="wide")
 
 st.write('<style>div.block-container{padding-top:1rem;}</style>', unsafe_allow_html=True)
 
+page_bg_img = f"""
+<style>
+[data-testid="stAppViewContainer"] > .main {{
+background-image: url("https://wallpaperaccess.com/full/1155039.png");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: local;
+}}
+
+[data-testid="stHeader"] {{
+background: rgba(0,0,0,0);
+}}
+
+[data-testid="stToolbar"] {{
+right: 2rem;
+}}
+</style>
+"""
+# Inject the CSS
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 st.header("About us")
 
 col1, col2= st.columns([3,2])

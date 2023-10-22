@@ -11,6 +11,28 @@ shapes= {'Row': 'https://cdn.discordapp.com/attachments/1164958184964882462/1165
         'Strip':'https://cdn.discordapp.com/attachments/1164958184964882462/1165412225054416926/image.png?ex=6546c1b6&is=65344cb6&hm=4d1a65b3df8c7a22822badcffd49cd9b56cdd949bea083e5901f7fb267012af0&',
         'Mixed':'https://cdn.discordapp.com/attachments/1164958184964882462/1165413768642175006/image.png?ex=6546c326&is=65344e26&hm=46eeb84f99adfad1102e040b4e880744d73d6d8d3b1dc2b6ae77218a5121d82f&'}
 
+page_bg_img = f"""
+<style>
+[data-testid="stAppViewContainer"] > .main {{
+background-image: url("https://wallpaperaccess.com/full/1155039.png");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: local;
+}}
+
+[data-testid="stHeader"] {{
+background: rgba(0,0,0,0);
+}}
+
+[data-testid="stToolbar"] {{
+right: 2rem;
+}}
+</style>
+"""
+# Inject the CSS
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 st.write('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_html=True)
 
 st.title("Dashboard")
