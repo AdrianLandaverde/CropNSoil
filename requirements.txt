@@ -4,3 +4,4 @@ streamlit
 streamlit_authenticator
 yaml
 scikit-learn
+openai

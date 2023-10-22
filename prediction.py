@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 import random
 import openai
-
+import os
 import datetime
 
 def predict_crops(nitrogen, phosphorous, potassium, temperature, humidity, ph, rainfall, size):
@@ -35,7 +35,7 @@ def predict_crops(nitrogen, phosphorous, potassium, temperature, humidity, ph, r
     mydate = datetime.datetime.now()
     month= mydate.strftime("%B")
 
-    openai.api_key = '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'
+    openai.api_key = os.environ.get("API_OPENAI")
     response_whattodonext = openai.Completion.create(
     engine="text-davinci-003",
     prompt="Assume i am a farmer,Can you provide detailed farming advice for the {} of august specifically focusing on {} and {}? Please include the activities, and precautions to be taken during this period. Answer in 80 words.make it breif and pointer".format(month,max,second_max),
@@ -48,10 +48,6 @@ def predict_crops(nitrogen, phosphorous, potassium, temperature, humidity, ph, r
     max_tokens=1000
     )
 
-    #response_whattodonext = "LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONG Text"
-    #response_whycr= "LOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOONG Text"
-
     return {"Revenue":round(result*size/2,2), "Type":type, "Crop1":max,"Crop1 Value": round(crop1[max]/2*size,2) , 
             "Crop2":second_max, "Crop2 Value": round(crop2[second_max]/2*size, 2), 
             "Advice1": response_whattodonext.choices[0].text.strip(), "Advice2": response_whycr.choices[0].text.strip()}
-            #"Advice1": response_whattodonext, "Advice2": response_whycr}
